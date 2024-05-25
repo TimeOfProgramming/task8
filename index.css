@@ -1,0 +1,51 @@
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  color: #333;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* SVG Container */
+.svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+/* Responsive Layout */
+.responsive-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns by default */
+  gap: 10px;
+}
+
+.responsive-item {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .responsive-container {
+      grid-template-columns: 1fr; /* One column on smaller screens */
+  }
+}
+
